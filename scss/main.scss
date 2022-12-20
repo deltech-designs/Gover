@@ -97,11 +97,6 @@ body{
         .form-group{
             display: flex;
             align-items: center;
-            // gap: 1rem;
-            // background-color: map-get($colors, clr_white);
-            // box-shadow: 0px 2px 4px rgba(0,0,0, 0.2), 0px 4px 10px rgba(0, 0, 0, 0.19);
-            // padding: 0.5rem;
-            // border-radius: 5px;
 
             input{
                 width: 200px;
@@ -124,6 +119,60 @@ body{
 }
 
 
+
+/*===================== Landing Page ===================== */
+.landing-page{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+
+    .landing-col-1{
+        width: 80%;
+        
+        h1{
+            font-size: 4rem;
+            color: #000000;
+        }
+
+        .landing-btn{
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            .btn-red{
+                @include btn-lg; 
+                background-color: map-get($colors, clr_red);
+                color: map-get($colors, clr_white);
+                font-weight: map-get($font-weights, fw-bold);
+                transition: all 0.5s;
+                cursor: pointer;
+                padding: 1rem 1.4rem;
+                &:hover{
+                    background-color: lighten(#F55253, 5%);
+                    color: map-get($colors, clr_white);
+                }
+            }
+
+            .btn-play{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 13px;
+                cursor: pointer;
+
+                .play-icon{
+                    padding-top: 10px;
+                    background-color: map-get($colors, clr_white);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+
+    }
+}
 
 
 
@@ -185,7 +234,7 @@ body{
             ul{
                 display: flex;
                 flex-direction: column;
-                padding: 1rem;
+                padding: 1rem; 
                 margin-top: 2rem;
                 
                 .navbar-items .navbar-link{
@@ -204,9 +253,35 @@ body{
                 font-size: 2.5rem;
             }
         }
-            
+    }
+
+
+
+    /*==============LANDING PAGE ==============*/
+
+    .landing-page{
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: 2fr 1fr;
+        grid-gap: 1rem;
+        align-items: center;
         
+        .landing-col-1{
+            width: 80%;
         
+            h1{
+                font-size: 3rem;
+            }
+
+            .btn-red{
+                background-color: map-get($colors, clr_red);   
+            }
+        }
+
+
+        .landing-col-2 img{
+            width: 20rem;
+        }
     }
 }
 
