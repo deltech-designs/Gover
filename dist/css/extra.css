@@ -1,0 +1,478 @@
+/* Font sizes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  color: #4D4D4D;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.active {
+  color: #F55253 !important;
+}
+
+.icon {
+  font-size: 1em;
+}
+
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto;
+}
+
+.container {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar-brand img {
+  width: 100%;
+}
+.navbar .nav-bar {
+  display: flex;
+  gap: 8rem;
+}
+.navbar .nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0.8rem;
+}
+.navbar .nav-bar ul .navbar-link {
+  color: #4D4D4D;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .nav-bar ul .active {
+  color: #F55253;
+}
+.navbar .nav-bar .form-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.19);
+  margin-left: 0.6rem;
+}
+.navbar .nav-bar .form-group input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+.navbar .nav-bar .form-group .divider {
+  width: 2px;
+  height: 20px;
+  background: #CFCECE;
+}
+.navbar .nav-bar .close-btn {
+  display: none;
+}
+.navbar .hide-bar {
+  display: none;
+}
+
+/*===================== Landing Page ===================== */
+.landing-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.landing-page .landing-col-1 {
+  width: 80%;
+}
+.landing-page .landing-col-1 h1 {
+  font-size: 4rem;
+  color: #000000;
+}
+.landing-page .landing-col-1 .landing-btn {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.landing-page .landing-col-1 .landing-btn .btn-red {
+  outline: none;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  background-color: #F55253;
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 1rem 1.4rem;
+}
+.landing-page .landing-col-1 .landing-btn .btn-red:hover {
+  background-color: #f66a6b;
+  color: #ffffff;
+}
+.landing-page .landing-col-1 .landing-btn .btn-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  cursor: pointer;
+}
+.landing-page .landing-col-1 .landing-btn .btn-play .play-icon {
+  padding-top: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+/*===================== Whatweserve ===================== */
+/*===================== Why choose us ===================== */
+/*===================== Home Delivery ===================== */
+/*===================== Home Delivery ===================== */
+/*===================== Footer ===================== */
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  /*===================== Mobile responsive navbar ===================== */
+  .navbar .hide-bar {
+    display: block;
+    font-size: 24px;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar .nav-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4D4D4D;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .navbar .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 60px;
+  }
+  .navbar .nav-bar ul .navbar-items {
+    color: #ffffff;
+    gap: 5rem;
+  }
+  .navbar .nav-bar .form-group {
+    width: 80%;
+    gap: 5px;
+    padding: 0.5rem;
+  }
+  .navbar .nav-bar .form-group i {
+    display: none;
+  }
+  .navbar .nav-bar .form-group input {
+    border: none;
+    outline: none;
+    padding: 0.5rem rem;
+    width: 100%;
+  }
+  .navbar .nav-bar .form-group .divider {
+    display: none;
+  }
+  .navbar .nav-bar .form-group img {
+    display: none;
+  }
+  .navbar .nav-bar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 2.5rem;
+  }
+  /*==============LANDING PAGE ==============*/
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .landing-page .landing-col-1 {
+    width: 80%;
+  }
+  .landing-page .landing-col-1 h1 {
+    font-size: 3rem;
+  }
+  .landing-page .landing-col-1 .btn-red {
+    background-color: #F55253;
+  }
+  .landing-page .landing-col-2 img {
+    width: 20rem;
+  }
+  /*============== What we serve ==============*/
+  .whatweserve {
+    padding: 1rem;
+    background-color: #fde3e3;
+  }
+  .whatweserve .whatweserve-title {
+    text-align: center;
+    margin: 2.3rem 0rem;
+  }
+  .whatweserve .whatweserve-title h5 {
+    color: #F55253;
+    margin: 0.2rem 0rem;
+  }
+  .whatweserve .whatweserve-title h1 {
+    font-size: 1.8rem;
+  }
+  .whatweserve .card-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.5rem;
+  }
+  .whatweserve .card-container .card {
+    background-color: #ffffff;
+    width: 18rem;
+    height: 20rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .whatweserve .card-container .card img {
+    margin-top: 1.5rem;
+  }
+  .whatweserve .card-container .card .card-desc h4 {
+    margin-bottom: 1rem;
+  }
+  .whatweserve .card-container .card .card-desc p {
+    font-size: 1rem;
+  }
+  .whatweserve .card-container .card-three {
+    margin-top: 21rem;
+  }
+  /*===================== Why choose us ===================== */
+  .whychooseus {
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .whychooseus .whychooseus-1 img {
+    width: 100%;
+    margin-left: 1.5rem;
+  }
+  .whychooseus .whychooseus-2 h5 {
+    padding: 0rem 3.5rem;
+    color: #03A66B;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .whychooseus .whychooseus-2 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    padding: 0rem 3.5rem;
+  }
+  .whychooseus .whychooseus-2 p {
+    padding: 0rem 3.5rem;
+    width: 27rem;
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+  }
+  .whychooseus .whychooseus-2 .btn-explore {
+    outline: none;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+    background-color: #F55253;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    transition: all 0.5s;
+    margin: 0rem 3.5rem;
+  }
+  .whychooseus .whychooseus-2 .btn-explore:hover {
+    background: #f66a6b;
+  }
+  /*===================== Home Delivery ===================== */
+  .homedelivery {
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .homedelivery .homedelivery-1 h5 {
+    color: #F9BA45;
+    font-weight: 600;
+    padding: 0rem 6.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .homedelivery .homedelivery-1 h1 {
+    font-size: 2.5rem;
+    padding: 0rem 6.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+  .homedelivery .homedelivery-1 p {
+    width: 34rem;
+    margin: 1.5rem 0rem;
+    font-size: 1rem;
+    padding: 0rem 6.5rem;
+  }
+  .homedelivery .homedelivery-1 .btn-homedelivery {
+    outline: none;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+    border: 2px solid #F55253;
+    background: transparent;
+    color: #F55253;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    transition: all 0.5s;
+    margin: 0rem 6.5rem;
+  }
+  .homedelivery .homedelivery-1 .btn-homedelivery:hover {
+    color: #ffffff;
+    background: #f66a6b;
+  }
+  .homedelivery .homedelivery-2 img {
+    width: 100%;
+    margin-left: 1.5rem;
+  }
+  /*===================== Download App ===================== */
+  .downloadapp-container {
+    padding: 2rem;
+    background-color: #fde3e3;
+  }
+  .downloadapp-container .downloadapp {
+    padding: 2rem;
+    gap: 3rem;
+  }
+  .downloadapp-container .downloadapp .downloadapp-2 h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+    color: #F55253;
+  }
+  .downloadapp-container .downloadapp .downloadapp-2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+  }
+  .downloadapp-container .downloadapp .downloadapp-2 p {
+    margin: 1rem 0rem;
+  }
+  .downloadapp-container .downloadapp .downloadapp-2 .downloadapp-btn {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .downloadapp-container .downloadapp .downloadapp-2 .downloadapp-btn a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #4D4D4D;
+    border-radius: 3px;
+    color: #4D4D4D;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .downloadapp-container .downloadapp .downloadapp-2 .downloadapp-btn a:hover {
+    background-color: #4D4D4D;
+    color: #ffffff;
+  }
+  .downloadapp-container .downloadapp .downloadapp-2 .downloadapp-btn a span {
+    margin-left: 0.5rem;
+  }
+  /*===================== Footer ===================== */
+  .footer {
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .footer .footer-1 p {
+    margin-top: 0.5rem;
+    font-size: 15px;
+  }
+  .footer .footer-2 {
+    width: 70%;
+  }
+  .footer .footer-2 ul {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  .footer .footer-2 ul li {
+    margin-bottom: 1rem;
+  }
+  .footer .footer-2 ul li a {
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .footer .footer-3 {
+    width: 70%;
+  }
+  .footer .footer-3 ul {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  .footer .footer-3 ul li {
+    margin-bottom: 0.7rem;
+  }
+  .footer .footer-3 ul li a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .footer .footer-4 p {
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+}/*# sourceMappingURL=extra.css.map */

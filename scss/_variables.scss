@@ -1,0 +1,25 @@
+$colors:(
+  "clr_white": #ffffff,
+  "clr_black": #4D4D4D,
+  "clr_red": #F55253,
+  "clr_green": #03A66B,
+  "clr_yellow": #F9BA45,
+); 
+
+$font-weights:(
+    'fw-light': 300, 
+    "fw-regular": 400, 
+    "fw-medium": 600, 
+    "fw-bold": 700
+); 
+
+/* Font sizes */
+$font-sizes:(
+  "fs-xsmall": 0.875em,
+  "fs-small": 1em, 
+  "fs-xmedium": 1.2em, 
+  "fs-medium":  1.5em,
+  "fs-xlarge": 2em, 
+  "fs-large": 2.5em,
+  "fs-xx-large": 3em
+); 
