@@ -153,89 +153,89 @@ body{
 
 /*===================== Whatweserve ===================== */
 
-// .whatweserve{
-//     padding: 2rem;
-//     background-color: lighten(#F55253, 30%);
+.whatweserve{
+    padding: 2rem;
+    background-color: lighten(#F55253, 30%);
 
-//     // .whatweserve-title{
-//     //     text-align: center;
-//     //     margin: 2.3rem 0rem;
+    .whatweserve-title{
+        text-align: center;
+        margin: 2.3rem 0rem;
 
-//     //     h5{
-//     //         color: map-get($colors, clr_red);
-//     //         margin:  0.5rem 0rem;
-//     //         font-weight: map-get($font-weights, fw-bold); 
-//     //     }
+        h5{
+            color: map-get($colors, clr_red);
+            margin:  0.5rem 0rem;
+            font-weight: map-get($font-weights, fw-bold); 
+        }
 
-//     //     h1{
-//     //         font-size: 2.3rem;
-//     //         color: #000000;
-//     //     }
+        h1{
+            font-size: 2.3rem;
+            color: #000000;
+        }
 
-//     // }
+    }
 
-//     // .card-container{
-//     //     display: flex;
-//     //     // grid-template-columns: 1fr 1fr 1fr;
-//     //     gap: 1rem;
-//     //     justify-content: space-around;
-//     //     // margin-left: 1rem;
+    .card-container{
+        display: flex;
+        // grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-content: space-around;
+        // margin-left: 1rem;
 
 
-//     //     .card{
-//     //         background-color: map-get($colors, clr_white);
-//     //         width: 18rem;
-//     //         height: 20rem;
-//     //         text-align: center;
-//     //         padding: 1rem;
-//     //         border-radius: 5px;
-//     //         transform: rotate(0deg);
+        .card{
+            background-color: map-get($colors, clr_white);
+            width: 18rem;
+            height: 20rem;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 5px;
+            transform: rotate(0deg);
 
-//     //         img{
-//     //             margin-top: 1.5rem;
-//     //         }
+            img{
+                margin-top: 1.5rem;
+            }
 
-//     //         .card-desc{
-//     //             h4{
-//     //                 margin-bottom: 1rem;
-//     //                 font-size: map-get($font-sizes, fs-medium);
+            .card-desc{
+                h4{
+                    margin-bottom: 1rem;
+                    font-size: map-get($font-sizes, fs-medium);
 
-//     //             }
+                }
 
-//     //             p{
-//     //                 font-size: 1rem;
-//     //                 line-height: 2.0;
-//     //             }
-//     //         }
+                p{
+                    font-size: 1rem;
+                    line-height: 2.0;
+                }
+            }
 
-//     //     }
+        }
 
-//     //     .second-card{
-//     //         position: relative;
+        .second-card{
+            position: relative;
             
             
             
-//     //         .card-outer{
-//     //             position: absolute;
-//     //             z-index: 1   ;
-//     //             background-color: map-get($colors, clr_red);
-//     //             transform: rotate(-3deg);
-//     //             width: 18rem;
-//     //             height: 20rem;
-//     //             margin-left: 12px;
-//     //             margin-top: 7px;
-//     //             text-align: center;
-//     //             border-radius: 5px;
-//     //         }
+            .card-outer{
+                position: absolute;
+                z-index: 1   ;
+                background-color: map-get($colors, clr_red);
+                transform: rotate(-3deg);
+                width: 18rem;
+                height: 20rem;
+                margin-left: 12px;
+                margin-top: 7px;
+                text-align: center;
+                border-radius: 5px;
+            }
 
-//     //         .card-1{
-//     //             position: absolute;
-//     //             z-index: 1;
-//     //         }
-//     //     }
-//     // }
+            .card-1{
+                position: absolute;
+                z-index: 1;
+            }
+        }
+    }
     
-// }
+}
 
 
 /*===================== Why choose us ===================== */

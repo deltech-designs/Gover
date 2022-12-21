@@ -84,7 +84,7 @@ body {
 .navbar .nav-bar .search-container {
   position: relative;
   padding: 1rem;
-  margin-left: 1rem;
+  margin: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -123,56 +123,6 @@ body {
 }
 .navbar .show-btn {
   display: none;
-}
-
-/*===================== Landing Page ===================== */
-.landing-page {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-}
-.landing-page .landing-col-1 {
-  width: 80%;
-}
-.landing-page .landing-col-1 h1 {
-  font-size: 4rem;
-  color: #000000;
-}
-.landing-page .landing-col-1 .landing-btn {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-.landing-page .landing-col-1 .landing-btn .btn-red {
-  outline: none;
-  border: none;
-  border-radius: 3%;
-  cursor: pointer;
-  background-color: #F55253;
-  color: #ffffff;
-  font-weight: 700;
-  transition: all 0.5s;
-  cursor: pointer;
-  padding: 1rem 1.4rem;
-}
-.landing-page .landing-col-1 .landing-btn .btn-red:hover {
-  background-color: #f66a6b;
-  color: #ffffff;
-}
-.landing-page .landing-col-1 .landing-btn .btn-play {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 13px;
-  cursor: pointer;
-}
-.landing-page .landing-col-1 .landing-btn .btn-play .play-icon {
-  padding-top: 10px;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
 }
 
 /*=============== MOBILE RESPONSIVE  ===============*/
@@ -216,7 +166,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #4D4D4D;
+    background-color: #03A66B;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -237,26 +187,6 @@ body {
     cursor: pointer;
     color: #ffffff;
     font-size: 2.5rem;
-  }
-  /*==============LANDING PAGE ==============*/
-  .landing-page {
-    display: flex;
-    flex-direction: column;
-    grid-template-rows: 2fr 1fr;
-    grid-gap: 1rem;
-    align-items: center;
-  }
-  .landing-page .landing-col-1 {
-    width: 80%;
-  }
-  .landing-page .landing-col-1 h1 {
-    font-size: 3rem;
-  }
-  .landing-page .landing-col-1 .btn-red {
-    background-color: #F55253;
-  }
-  .landing-page .landing-col-2 img {
-    width: 20rem;
   }
 }
 @media screen and (max-width: 576px) {

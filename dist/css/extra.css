@@ -153,6 +153,68 @@ body {
 }
 
 /*===================== Whatweserve ===================== */
+.whatweserve {
+  padding: 2rem;
+  background-color: #fde3e3;
+}
+.whatweserve .whatweserve-title {
+  text-align: center;
+  margin: 2.3rem 0rem;
+}
+.whatweserve .whatweserve-title h5 {
+  color: #F55253;
+  margin: 0.5rem 0rem;
+  font-weight: 700;
+}
+.whatweserve .whatweserve-title h1 {
+  font-size: 2.3rem;
+  color: #000000;
+}
+.whatweserve .card-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.whatweserve .card-container .card {
+  background-color: #ffffff;
+  width: 18rem;
+  height: 20rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  transform: rotate(0deg);
+}
+.whatweserve .card-container .card img {
+  margin-top: 1.5rem;
+}
+.whatweserve .card-container .card .card-desc h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+}
+.whatweserve .card-container .card .card-desc p {
+  font-size: 1rem;
+  line-height: 2;
+}
+.whatweserve .card-container .second-card {
+  position: relative;
+}
+.whatweserve .card-container .second-card .card-outer {
+  position: absolute;
+  z-index: 1;
+  background-color: #F55253;
+  transform: rotate(-3deg);
+  width: 18rem;
+  height: 20rem;
+  margin-left: 12px;
+  margin-top: 7px;
+  text-align: center;
+  border-radius: 5px;
+}
+.whatweserve .card-container .second-card .card-1 {
+  position: absolute;
+  z-index: 1;
+}
+
 /*===================== Why choose us ===================== */
 /*===================== Home Delivery ===================== */
 /*===================== Home Delivery ===================== */
