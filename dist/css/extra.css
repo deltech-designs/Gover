@@ -3,7 +3,7 @@
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
-  color: #4D4D4D;
+  color: #2E2E2E;
 }
 
 .row {
@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .icon {
   font-size: 1em;
+}
+
+.lead {
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2E2E2E;
 }
 
 *, *::before, *::after {
@@ -67,7 +73,7 @@ body {
   padding: 0.8rem;
 }
 .navbar .nav-bar ul .navbar-link {
-  color: #4D4D4D;
+  color: #2E2E2E;
   font-size: 1.5em;
   font-weight: 600;
   text-decoration: none;
@@ -251,7 +257,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #4D4D4D;
+    background-color: #2E2E2E;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -476,15 +482,15 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    border: 1px solid #4D4D4D;
+    border: 1px solid #2E2E2E;
     border-radius: 3px;
-    color: #4D4D4D;
+    color: #2E2E2E;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: all 0.5s;
   }
   .downloadapp-container .downloadapp .downloadapp-2 .downloadapp-btn a:hover {
-    background-color: #4D4D4D;
+    background-color: #2E2E2E;
     color: #ffffff;
   }
   .downloadapp-container .downloadapp .downloadapp-2 .downloadapp-btn a span {

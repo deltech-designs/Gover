@@ -71,3 +71,16 @@ h1, h2, h3, h4, h5, h6, p{
 .icon{
     font-size: map-get($font-sizes, fs-small);
 }
+
+.lead{
+    line-height: 1.5;
+    font-weight: map-get($font-weights, fw-regular);
+    color: map-get($colors, clr_black);
+}
+
+// .btn{
+//     outline: none;
+//     border: none;
+//     font-weight: map-get($font-weights, fw-medium);
+    
+// }

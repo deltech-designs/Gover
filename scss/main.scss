@@ -30,7 +30,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    color: map-get($colors, clr_black);
+    color: map-get($colors, clr_grey);
     // background-color: #c0c0c0;
 
     .navbar-brand img {
@@ -58,7 +58,7 @@ body{
                 gap: 1rem;
 
                 .navbar-items .navbar-link{
-                color: map-get($colors, clr_black);
+                color: map-get($colors, clr_grey);
                 text-decoration: none;
                 font-size: map-get($font-sizes, fs-small);
                 font-weight: map-get($font-weights, fw-medium);
@@ -111,7 +111,7 @@ body{
             }
 
             .divder{
-                background-color: map-get($colors, clr_black);
+                background-color: map-get($colors, clr_grey);
                 width: 10px;
                 height: 10px;
             }
@@ -124,7 +124,82 @@ body{
 }
 
 
+/*=============== LANDING PAGE  ===============*/
+.landing-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // gap: rem;
 
+    .landing-col-1{
+        width: 45%;
+        padding: 1rem;
+
+        .morethanfaster{
+            width: 220px;
+            background-color: lighten(#F55253, 30%);
+            color: map-get($colors, clr_red);
+            border-radius: 30px;
+            padding: 1rem 0rem 0rem 1.5rem;
+            font-weight: map-get($font-weights, fw-regular);
+            font-size: map-get($font-sizes, fs-small);
+            box-shadow: 0px 2px 4px rgba(#000000,  0.19);
+            margin-bottom: 20px;
+            display: flex;
+            
+            img{
+                width: 40px;
+            }
+        }
+
+        .heading-title{
+            font-size: map-get($font-sizes, fs-xxxlarge);
+            font-weight: map-get($font-weights, bold);
+            color: map-get($colors, clr_black);
+            margin-bottom: 1rem;
+            
+            span{
+                font-weight: normal !important;
+            }
+        }
+
+        .title-content{
+            margin-bottom: 3rem;
+        }
+
+        .landing-btn{
+            display: flex;
+            gap: 2rem;
+
+
+            .btn-red{
+                @include btn-lg;
+                padding: 1rem 1.5rem;
+                background-color: map-get($colors, clr_red);
+                color: map-get($colors, clr_white);
+                font-weight: map-get($font-weights, fw-medium);
+            }
+
+            .btn-play{
+                @include btn-lg;
+                display: flex;
+                // margin-top: 10px;
+
+                img{
+                    box-shadow: 0px 2px 4px rgba(#000000,  0.19);
+                    border-radius: 50%;
+                    width: 60px;
+                }
+                
+                span{
+                    font-weight: map-get($font-weights, fw-regular);
+                    padding-left: 10px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -178,7 +253,7 @@ body{
             position: fixed; 
             top: 0; 
             left: 0;
-            background-color: map-get($colors, clr_green);
+            background-color: map-get($colors, clr_black);
             overflow-x: hidden; 
             transition: 0.5s; 
             
@@ -205,6 +280,90 @@ body{
             }
         }       
     }
+
+
+    /*=============== LANDING PAGE  ===============*/
+    .landing-page{
+        display: flex;
+        align-items: none;
+        justify-content: flex-start;
+        flex-direction: column;
+        // gap: rem;
+
+        .landing-col-1{
+            width: 100%;
+            padding: 1.3rem 1rem;
+
+            .morethanfaster{
+                width: 180px;
+                background-color: lighten(#F55253, 30%);
+                color: map-get($colors, clr_red);
+                border-radius: 30px;
+                padding: 1rem 0rem 0rem 1.5rem;
+                font-weight: map-get($font-weights, fw-regular);
+                font-size: map-get($font-sizes, fs-xsmall);
+                box-shadow: 0px 2px 4px rgba(#000000,  0.19);
+                margin-bottom: 10px;
+                display: flex;
+                
+                img{
+                    width: 40px;
+                }
+            }
+
+            .heading-title{
+                font-size: map-get($font-sizes, fs-xxlarge);
+                font-weight: map-get($font-weights, bold);
+                color: map-get($colors, clr_black);
+                margin-bottom: 0.7rem;
+                
+                span{
+                    font-weight: normal !important;
+                }
+            }
+
+            .title-content{
+                margin-bottom: 1.5rem;
+            }
+
+            .landing-btn{
+                display: flex;
+                gap: 2rem;
+
+
+                .btn-red{
+                    @include btn-lg;
+                    padding: 1rem 1.5rem;
+                    background-color: map-get($colors, clr_red);
+                    color: map-get($colors, clr_white);
+                    font-weight: map-get($font-weights, fw-medium);
+                }
+
+                .btn-play{
+                    @include btn-lg;
+                    display: flex;
+                    // margin-top: 10px;
+
+                    img{
+                        box-shadow: 0px 2px 4px rgba(#000000,  0.19);
+                        border-radius: 50%;
+                        width: 60px;
+                    }
+                    
+                    span{
+                        font-weight: map-get($font-weights, fw-regular);
+                        padding-left: 10px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .landing-col-2 img{
+            width: 20rem;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 576px) {

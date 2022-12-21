@@ -3,7 +3,7 @@
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
-  color: #4D4D4D;
+  color: #2E2E2E;
 }
 
 .row {
@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .icon {
   font-size: 1em;
+}
+
+.lead {
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2E2E2E;
 }
 
 *, *::before, *::after {
@@ -125,6 +131,74 @@ body {
   display: none;
 }
 
+/*=============== LANDING PAGE  ===============*/
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-page .landing-col-1 {
+  width: 45%;
+  padding: 1rem;
+}
+.landing-page .landing-col-1 .morethanfaster {
+  width: 220px;
+  background-color: #fde3e3;
+  color: #F55253;
+  border-radius: 30px;
+  padding: 1rem 0rem 0rem 1.5rem;
+  font-weight: 400;
+  font-size: 1em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  display: flex;
+}
+.landing-page .landing-col-1 .morethanfaster img {
+  width: 40px;
+}
+.landing-page .landing-col-1 .heading-title {
+  font-size: 4em;
+  color: #2E2E2E;
+  margin-bottom: 1rem;
+}
+.landing-page .landing-col-1 .heading-title span {
+  font-weight: normal !important;
+}
+.landing-page .landing-col-1 .title-content {
+  margin-bottom: 3rem;
+}
+.landing-page .landing-col-1 .landing-btn {
+  display: flex;
+  gap: 2rem;
+}
+.landing-page .landing-col-1 .landing-btn .btn-red {
+  outline: none;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  background-color: #F55253;
+  color: #ffffff;
+  font-weight: 600;
+}
+.landing-page .landing-col-1 .landing-btn .btn-play {
+  outline: none;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  display: flex;
+}
+.landing-page .landing-col-1 .landing-btn .btn-play img {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  width: 60px;
+}
+.landing-page .landing-col-1 .landing-btn .btn-play span {
+  font-weight: 400;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
 /*=============== MOBILE RESPONSIVE  ===============*/
 @media screen and (max-width: 992px) {
   .container {
@@ -166,7 +240,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #03A66B;
+    background-color: #2E2E2E;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -187,6 +261,77 @@ body {
     cursor: pointer;
     color: #ffffff;
     font-size: 2.5rem;
+  }
+  /*=============== LANDING PAGE  ===============*/
+  .landing-page {
+    display: flex;
+    align-items: none;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .landing-page .landing-col-1 {
+    width: 100%;
+    padding: 1.3rem 1rem;
+  }
+  .landing-page .landing-col-1 .morethanfaster {
+    width: 180px;
+    background-color: #fde3e3;
+    color: #F55253;
+    border-radius: 30px;
+    padding: 1rem 0rem 0rem 1.5rem;
+    font-weight: 400;
+    font-size: 0.875em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .landing-page .landing-col-1 .morethanfaster img {
+    width: 40px;
+  }
+  .landing-page .landing-col-1 .heading-title {
+    font-size: 2.8em;
+    color: #2E2E2E;
+    margin-bottom: 0.7rem;
+  }
+  .landing-page .landing-col-1 .heading-title span {
+    font-weight: normal !important;
+  }
+  .landing-page .landing-col-1 .title-content {
+    margin-bottom: 1.5rem;
+  }
+  .landing-page .landing-col-1 .landing-btn {
+    display: flex;
+    gap: 2rem;
+  }
+  .landing-page .landing-col-1 .landing-btn .btn-red {
+    outline: none;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    background-color: #F55253;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .landing-page .landing-col-1 .landing-btn .btn-play {
+    outline: none;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+    display: flex;
+  }
+  .landing-page .landing-col-1 .landing-btn .btn-play img {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    width: 60px;
+  }
+  .landing-page .landing-col-1 .landing-btn .btn-play span {
+    font-weight: 400;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  .landing-page .landing-col-2 img {
+    width: 20rem;
   }
 }
 @media screen and (max-width: 576px) {
