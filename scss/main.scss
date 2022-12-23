@@ -118,14 +118,12 @@ body{
     }
 }
 
-
-
 /*===================== Landing Page ===================== */
 .landing-page{
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-
+    
     .landing-col-1{
         width: 80%;
         
@@ -174,7 +172,132 @@ body{
     }
 }
 
+/*===================== What we serve ===================== */
 
+.whatweserve {
+    width: 100%;
+    background-color: lighten(#F55253, 30%); 
+    color: map-get($colors, clr_white);
+    padding: 2rem;
+
+    .title-header{
+        text-align: center;
+        margin: 3rem auto;
+        width: 35rem; 
+
+        h5{
+            color: map-get($colors, clr_red);
+            margin: 5px 0px; 
+            font-size: map-get($font-sizes, fs-small);
+        }
+
+        h1{
+            color: map-get($colors, clr_black);
+            font-size: map-get($font-sizes, fs-large);
+            line-height: 1.5;
+        }
+    }
+
+
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        place-items: center;
+        place-content: center;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        margin: auto;
+
+        &:nth-child(2){
+            background-color: map-get($colors, clr_green);
+        }
+        
+        .card{
+            width: 18rem;
+            height: 20rem;
+            background-color: map-get($colors, clr_white); 
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            padding: 1rem 0rem;
+
+            img{
+                margin-top: 40px;
+            }
+
+            .card-desc {
+                margin-top: 1rem;
+            
+                h4{
+                    font-size: map-get($font-sizes, fs-medium);
+                    margin-bottom: 15px;
+                }
+                
+                p{
+                    font-size: map-get($font-sizes, fs-small);
+                    line-height: 1.5; 
+
+                }
+            }
+        }
+
+        .second-card{
+            position: relative; 
+            display: grid; 
+            grid-template: 1fr / 1fr;
+            place-items: center; 
+
+            .second-card > * {
+                grid-column: 1 / 1; 
+                grid-row: 1 / 1; 
+            }
+            
+
+            .card-outer{
+                position: absolute; 
+                background-color: map-get($colors, clr_red); 
+                width: 18rem;
+                height: 20rem;
+                transform: rotate(-3deg); 
+                border-radius: 5px;
+                z-index: 1;
+                padding: 1rem;
+
+            }
+
+            .card-1{
+                position: absolute; 
+                z-index: 1; 
+            }
+        }
+
+        // .second-card{
+        //     position: relative; 
+
+        //     .card-outer{
+        //         position: absolute;
+        //         z-index: 1;
+        //         background-color: map-get($colors, clr_red);
+        //         transform: rotate(-3deg);
+        //         width: 19rem;
+        //         height: 20.5rem;
+        //         margin-left: 12px;
+        //         margin-top: 7px;
+        //         text-align: center;
+        //         border-radius: 5px;
+        //     }
+                
+        //     .card-1{
+        //         position: absolute;
+        //         z-index: 1;
+        //     }
+        // }
+
+        
+    }
+}
 
 
 /*=============== MOBILE RESPONSIVE  ===============*/
@@ -255,8 +378,6 @@ body{
         }
     }
 
-
-
     /*==============LANDING PAGE ==============*/
 
     .landing-page{
@@ -283,6 +404,127 @@ body{
             width: 20rem;
         }
     }
+
+    /*===================== What we serve ===================== */
+
+.whatweserve {
+    width: 100%;
+    background-color: lighten(#F55253, 30%); 
+    color: map-get($colors, clr_white);
+    padding: 1rem;
+
+    .title-header{
+        text-align: center;
+        margin: 2rem auto;
+        width: 100%; 
+
+        h5{
+            color: map-get($colors, clr_red);
+            margin: 5px 0px; 
+            font-size: map-get($font-sizes, fs-xsmall);
+        }
+
+        h1{
+            color: map-get($colors, clr_black);
+            font-size: map-get($font-sizes, fs-medium);
+            line-height: 1.5;
+        }
+    }
+
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 12rem;
+        
+        justify-content: center;
+        margin: auto;
+
+        
+        .card{
+            width: 18rem;
+            height: 20rem;
+            background-color: map-get($colors, clr_white); 
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            padding: 1rem 0rem;
+
+            img{
+                margin-top: 40px;
+            }
+
+            .card-desc {
+                margin-top: 1rem;
+            
+                h4{
+                    font-size: map-get($font-sizes, fs-medium);
+                    margin-bottom: 15px;
+                }
+                
+                p{
+                    font-size: map-get($font-sizes, fs-small);
+                    line-height: 1.5; 
+
+                }
+            }
+        }
+
+        .second-card{
+            position: relative; 
+            display: grid; 
+            grid-template: 1fr / 1fr;
+            place-items: center; 
+
+            .second-card > * {
+                grid-column: 1 / 1; 
+                grid-row: 1 / 1; 
+            }
+            
+
+            .card-outer{
+                position: absolute; 
+                background-color: map-get($colors, clr_red); 
+                width: 18rem;
+                height: 20rem;
+                transform: rotate(-3deg); 
+                border-radius: 5px;
+                z-index: 1;
+                padding: 1rem;
+
+            }
+
+            .card-1{
+                position: absolute; 
+                z-index: 1; 
+            }
+        }
+
+        // .second-card{
+        //     position: relative; 
+
+        //     .card-outer{
+        //         position: absolute;
+        //         z-index: 1;
+        //         background-color: map-get($colors, clr_red);
+        //         transform: rotate(-3deg);
+        //         width: 19rem;
+        //         height: 20.5rem;
+        //         margin-left: 12px;
+        //         margin-top: 7px;
+        //         text-align: center;
+        //         border-radius: 5px;
+        //     }
+                
+        //     .card-1{
+        //         position: absolute;
+        //         z-index: 1;
+        //     }
+        // }
+
+        
+    }
+}
 }
 
 @media screen and (max-width: 576px) {
