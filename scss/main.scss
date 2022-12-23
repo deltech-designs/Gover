@@ -124,12 +124,11 @@ body{
 }
 
 
-/*=============== LANDING PAGE  ===============*/
+
+/*===================== Landing Page ===================== */
 .landing-page{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    // gap: rem;
 
     .landing-col-1{
         width: 45%;
@@ -200,6 +199,7 @@ body{
         }
     }
 }
+
 
 
 
@@ -282,7 +282,9 @@ body{
     }
 
 
-    /*=============== LANDING PAGE  ===============*/
+
+    /*==============LANDING PAGE ==============*/
+
     .landing-page{
         display: flex;
         align-items: none;
@@ -363,7 +365,6 @@ body{
             width: 20rem;
         }
     }
-    
 }
 
 @media screen and (max-width: 576px) {

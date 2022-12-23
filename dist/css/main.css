@@ -131,11 +131,10 @@ body {
   display: none;
 }
 
-/*=============== LANDING PAGE  ===============*/
+/*===================== Landing Page ===================== */
 .landing-page {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .landing-page .landing-col-1 {
   width: 45%;
@@ -262,7 +261,7 @@ body {
     color: #ffffff;
     font-size: 2.5rem;
   }
-  /*=============== LANDING PAGE  ===============*/
+  /*==============LANDING PAGE ==============*/
   .landing-page {
     display: flex;
     align-items: none;
