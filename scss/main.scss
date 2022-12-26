@@ -337,6 +337,7 @@ body{
             width: 0%;
             height: 100%; 
             position: fixed; 
+            z-index: 3;
             top: 0; 
             left: 0;
             background-color: map-get($colors, clr_black);
@@ -540,7 +541,7 @@ body{
         }
     }
 
-    
+
 
 }
 

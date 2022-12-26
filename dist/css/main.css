@@ -307,6 +307,7 @@ body {
     width: 0%;
     height: 100%;
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: #2E2E2E;
