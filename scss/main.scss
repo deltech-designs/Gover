@@ -128,6 +128,7 @@ body{
 /*===================== Landing Page ===================== */
 .landing-page{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     .landing-col-1{
@@ -201,6 +202,91 @@ body{
 }
 
 
+/*===================== What We Serve ===================== */
+.whatweserve{
+    background-color: lighten(#F55253, 30%);
+    padding: 2rem;
+
+    .whatweserve-title{
+        text-align: center;
+        margin: 3rem 0rem;
+        
+        h5{
+            color: map-get($colors, clr_red);
+            font-size: map-get($font-sizes, fs-xsmall);
+            margin: 0.5rem 0rem;
+
+        }
+
+        h1{
+            font-size: map-get($font-sizes, fs-large);
+            line-height: 1.5;
+        }
+    }
+
+    .card-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-left: 7rem;
+        margin-bottom: 5rem;
+
+
+        .card{
+            width: 18rem;
+            height: 20rem;
+            background-color: map-get($colors, clr_white);
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            padding: 1rem;
+            
+            img{
+                margin: 1.5rem 0rem;
+            }
+
+            .card-desc{
+                padding: 1rem;
+
+                h4{
+                    margin-bottom: 1rem;
+                    font-size: 1rem;
+                }
+
+                p{
+                    line-height: 1.5;
+                }
+            }
+        }
+
+
+        .second-card{
+            display: grid;
+            grid-template: 1fr / 1fr;
+            place-content: center;
+
+            *{
+                grid-column: 1 / 1;
+                grid-row: 1 / 1;
+            }
+
+            .card-outer{
+                z-index: 1;
+                background-color: map-get($colors, clr_red);
+                border-radius: 5px;
+                transform: rotate(3deg);
+                width: 18rem;
+                height: 20rem;
+            }
+
+            .card-1{
+                z-index: 2;
+            }
+        }
+
+    }
+}
 
 
 /*=============== MOBILE RESPONSIVE  ===============*/
@@ -286,8 +372,8 @@ body{
 
     .landing-page{
         display: flex;
-        align-items: none;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         // gap: rem;
 
@@ -364,6 +450,96 @@ body{
             width: 20rem;
         }
     }
+
+
+
+    /*===================== What We Serve ===================== */
+    .whatweserve{
+        background-color: lighten(#F55253, 30%);
+        padding: 2rem;
+
+        .whatweserve-title{
+            text-align: center;
+            margin: 3rem 0rem;
+            
+            h5{
+                color: map-get($colors, clr_red);
+                font-size: map-get($font-sizes, fs-xsmall);
+                margin: 0.2rem 0rem;
+
+            }
+
+            h1{
+                font-size: map-get($font-sizes, fs-medium);
+                line-height: 1.5;
+            }
+        }
+
+        .card-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0rem;
+            margin-left: -0rem;
+            margin-top: 0.5rem;
+
+            .card{
+                width: 18rem;
+                height: 20rem;
+                background-color: map-get($colors, clr_white);
+                padding: 1rem;
+                text-align: center;
+                border-radius: 8px;
+                padding: 0.8rem;
+                
+                img{
+                    margin: 1.5rem 0rem;
+                }
+
+                .card-desc{
+                    padding: 1rem;
+
+                    h4{
+                        margin-bottom: 1rem;
+                        font-size: 1rem;
+                    }
+
+                    p{
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+
+            .second-card{
+                display: grid;
+                grid-template: 1fr / 1fr;
+                place-content: center;
+
+                *{
+                    grid-column: 1 / 1;
+                    grid-row: 1 / 1;
+                }
+
+                .card-outer{
+                    z-index: 1;
+                    background-color: map-get($colors, clr_red);
+                    border-radius: 5px;
+                    transform: rotate(2deg);
+                    // width: 19rem;
+                    // height: 20rem;
+                }
+
+                .card-1{
+                    z-index: 2;
+                }
+            }
+
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
