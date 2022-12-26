@@ -134,6 +134,7 @@ body {
 /*===================== Landing Page ===================== */
 .landing-page {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .landing-page .landing-col-1 {
@@ -196,6 +197,75 @@ body {
   font-weight: 400;
   padding-left: 10px;
   margin-top: 20px;
+}
+
+/*===================== What We Serve ===================== */
+.whatweserve {
+  background-color: #fde3e3;
+  padding: 2rem;
+}
+.whatweserve .whatweserve-title {
+  text-align: center;
+  margin: 3rem 0rem;
+}
+.whatweserve .whatweserve-title h5 {
+  color: #F55253;
+  font-size: 0.875em;
+  margin: 0.5rem 0rem;
+}
+.whatweserve .whatweserve-title h1 {
+  font-size: 2.5em;
+  line-height: 1.5;
+}
+.whatweserve .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-left: 7rem;
+  margin-bottom: 5rem;
+}
+.whatweserve .card-container .card {
+  width: 18rem;
+  height: 20rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.whatweserve .card-container .card img {
+  margin: 1.5rem 0rem;
+}
+.whatweserve .card-container .card .card-desc {
+  padding: 1rem;
+}
+.whatweserve .card-container .card .card-desc h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.whatweserve .card-container .card .card-desc p {
+  line-height: 1.5;
+}
+.whatweserve .card-container .second-card {
+  display: grid;
+  grid-template: 1fr/1fr;
+  place-content: center;
+}
+.whatweserve .card-container .second-card * {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.whatweserve .card-container .second-card .card-outer {
+  z-index: 1;
+  background-color: #F55253;
+  border-radius: 5px;
+  transform: rotate(3deg);
+  width: 18rem;
+  height: 20rem;
+}
+.whatweserve .card-container .second-card .card-1 {
+  z-index: 2;
 }
 
 /*=============== MOBILE RESPONSIVE  ===============*/
@@ -264,8 +334,8 @@ body {
   /*==============LANDING PAGE ==============*/
   .landing-page {
     display: flex;
-    align-items: none;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   .landing-page .landing-col-1 {
@@ -331,6 +401,74 @@ body {
   }
   .landing-page .landing-col-2 img {
     width: 20rem;
+  }
+  /*===================== What We Serve ===================== */
+  .whatweserve {
+    background-color: #fde3e3;
+    padding: 2rem;
+  }
+  .whatweserve .whatweserve-title {
+    text-align: center;
+    margin: 3rem 0rem;
+  }
+  .whatweserve .whatweserve-title h5 {
+    color: #F55253;
+    font-size: 0.875em;
+    margin: 0.2rem 0rem;
+  }
+  .whatweserve .whatweserve-title h1 {
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+  .whatweserve .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0rem;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+  }
+  .whatweserve .card-container .card {
+    width: 18rem;
+    height: 20rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.8rem;
+  }
+  .whatweserve .card-container .card img {
+    margin: 1.5rem 0rem;
+  }
+  .whatweserve .card-container .card .card-desc {
+    padding: 1rem;
+  }
+  .whatweserve .card-container .card .card-desc h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .whatweserve .card-container .card .card-desc p {
+    line-height: 1.5;
+  }
+  .whatweserve .card-container .second-card {
+    display: grid;
+    grid-template: 1fr/1fr;
+    place-content: center;
+  }
+  .whatweserve .card-container .second-card * {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  .whatweserve .card-container .second-card .card-outer {
+    z-index: 1;
+    background-color: #F55253;
+    border-radius: 5px;
+    transform: rotate(2deg);
+  }
+  .whatweserve .card-container .second-card .card-1 {
+    z-index: 2;
   }
 }
 @media screen and (max-width: 576px) {
