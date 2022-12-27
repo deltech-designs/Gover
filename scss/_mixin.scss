@@ -14,7 +14,7 @@ font-size: 2.5rem !important;
     outline: none;
     border: none;
     // padding: 1rem 1.3rem;
-    border-radius: 3%;
+    border-radius: 5%;
     // margin: 0rem 1rem;
     cursor: pointer;
 }
@@ -46,6 +46,10 @@ h1, h2, h3, h4, h5, h6, p{
   
 .justify-content-around{
     justify-content: space-around;
+}
+
+.justify-content-between{
+    justify-content: space-between;
 }
 
 .justify-content-center{

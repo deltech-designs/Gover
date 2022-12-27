@@ -123,8 +123,7 @@ body{
     }
 }
 
-
-
+ 
 /*===================== Landing Page ===================== */
 .landing-page{
     display: flex;
@@ -183,6 +182,7 @@ body{
             .btn-play{
                 @include btn-lg;
                 display: flex;
+                background-color: map-get($colors, clr_white);
                 // margin-top: 10px;
 
                 img{
@@ -288,6 +288,50 @@ body{
     }
 }
 
+/*===================== Why Choose Us ===================== */
+.whychooseus{
+    padding: 1rem;
+    gap: 6rem;
+
+    .whychooseus-1{
+        width: 50%;
+        img{
+            width: 40rem;
+        }
+
+    } 
+
+    .whychooseus-2{
+        width: 50%;
+
+        .whychooseus-2-subtitle{
+            font-size: map-get($font-sizes, fs-small);
+            color: map-get($colors, clr_green); 
+            margin-bottom: 1rem;
+        }
+        
+        .whychooseus-2-title{
+            font-size: map-get($font-sizes, fs-xxxlarge);
+            font-weight: map-get($font-weights, fw-bold );
+            margin-bottom: 1.5rem;
+        }
+
+        .whychooseus-2-content{
+            font-size: map-get($font-sizes, fs-medium);
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+
+        .btn-explore{
+            @include btn-lg; 
+            background-color: map-get($colors, clr_red);
+            color: map-get($colors, clr_white);
+            padding: 1rem 1.5rem;
+        
+        }
+    }
+}
+
 
 /*=============== MOBILE RESPONSIVE  ===============*/
 
@@ -310,7 +354,6 @@ body{
     }
 
     /*===================== Mobile responsive navbar ===================== */
-    
     .navbar{
         padding: 1rem;
 
@@ -368,9 +411,7 @@ body{
     }
 
 
-
     /*==============LANDING PAGE ==============*/
-
     .landing-page{
         display: flex;
         align-items: center;
@@ -541,7 +582,50 @@ body{
         }
     }
 
+    /*===================== Why Choose Us ===================== */
+    .whychooseus{
+        flex-direction: column;
+        padding: 1rem;
+        gap: 6rem;
 
+        .whychooseus-1{
+            width: 100%;
+            img{
+                width: 20rem;
+            }
+
+        } 
+
+        .whychooseus-2{
+            width: 100%;
+
+            .whychooseus-2-subtitle{
+                font-size: map-get($font-sizes, fs-small);
+                color: map-get($colors, clr_green); 
+                margin-bottom: 1rem;
+            }
+            
+            .whychooseus-2-title{
+                font-size: map-get($font-sizes, fs-large);
+                font-weight: map-get($font-weights, fw-bold);
+                margin-bottom: 0.7rem;
+            }
+
+            .whychooseus-2-content{
+                font-size: map-get($font-sizes, fs-small);
+                line-height: 1.5;
+                margin-bottom: 2rem;
+            }
+
+            .btn-explore{
+                @include btn-lg; 
+                background-color: map-get($colors, clr_red);
+                color: map-get($colors, clr_white);
+                padding: 1rem 1.5rem;
+            
+            }
+        }
+    }
 
 }
 
