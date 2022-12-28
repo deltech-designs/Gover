@@ -161,7 +161,7 @@ body {
   width: 40px;
 }
 .landing-page .landing-col-1 .heading-title {
-  font-size: 3.5em;
+  font-size: 4em;
   color: #2E2E2E;
   margin-bottom: 1rem;
 }
@@ -178,7 +178,7 @@ body {
 .landing-page .landing-col-1 .landing-btn .btn-red {
   outline: none;
   border: none;
-  border-radius: 3%;
+  border-radius: 5%;
   cursor: pointer;
   padding: 1rem 1.5rem;
   background-color: #F55253;
@@ -188,7 +188,7 @@ body {
 .landing-page .landing-col-1 .landing-btn .btn-play {
   outline: none;
   border: none;
-  border-radius: 3%;
+  border-radius: 5%;
   cursor: pointer;
   display: flex;
   background-color: #ffffff;
@@ -290,11 +290,12 @@ body {
 .whychooseus .whychooseus-2 .whychooseus-2-subtitle {
   font-size: 1em;
   color: #03A66B;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 .whychooseus .whychooseus-2 .whychooseus-2-title {
-  font-size: 3.5em;
+  font-size: 2.8em;
   font-weight: 700;
+  line-height: 1.4;
   margin-bottom: 1.5rem;
 }
 .whychooseus .whychooseus-2 .whychooseus-2-content {
@@ -305,11 +306,55 @@ body {
 .whychooseus .whychooseus-2 .btn-explore {
   outline: none;
   border: none;
-  border-radius: 3%;
+  border-radius: 5%;
   cursor: pointer;
   background-color: #F55253;
   color: #ffffff;
   padding: 1rem 1.5rem;
+}
+
+/*===================== Why Choose Us ===================== */
+.homedelivery {
+  gap: 6rem;
+  padding: 1rem;
+}
+.homedelivery .homedelivery-1 {
+  width: 50%;
+}
+.homedelivery .homedelivery-1 .subtitle {
+  font-size: 1em;
+  color: #F9BA45;
+  margin-bottom: 0.7rem;
+}
+.homedelivery .homedelivery-1 .title {
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+.homedelivery .homedelivery-1 .content {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.homedelivery .homedelivery-1 .btn-homedelivery {
+  background-color: transparent;
+  border: 2px solid #F55253;
+  color: #F55253;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  border-radius: 3%;
+  transition: 0.5s;
+}
+.homedelivery .homedelivery-1 .btn-homedelivery:hover {
+  background-color: #F55253;
+  color: #ffffff;
+}
+.homedelivery .homedelivery-2 {
+  width: 50%;
+}
+.homedelivery .homedelivery-2 img {
+  width: 30rem;
 }
 
 /*=============== MOBILE RESPONSIVE  ===============*/
@@ -420,7 +465,7 @@ body {
   .landing-page .landing-col-1 .landing-btn .btn-red {
     outline: none;
     border: none;
-    border-radius: 3%;
+    border-radius: 5%;
     cursor: pointer;
     padding: 1rem 1.5rem;
     background-color: #F55253;
@@ -430,7 +475,7 @@ body {
   .landing-page .landing-col-1 .landing-btn .btn-play {
     outline: none;
     border: none;
-    border-radius: 3%;
+    border-radius: 5%;
     cursor: pointer;
     display: flex;
   }
@@ -548,7 +593,7 @@ body {
   .whychooseus .whychooseus-2 .btn-explore {
     outline: none;
     border: none;
-    border-radius: 3%;
+    border-radius: 5%;
     cursor: pointer;
     background-color: #F55253;
     color: #ffffff;

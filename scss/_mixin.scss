@@ -1,6 +1,6 @@
 @mixin fs-sm{
     font-size: 0.75rem !important;
-  }
+}
       
 @mixin fs-md{
     font-size: 2rem !important;
@@ -22,7 +22,7 @@ font-size: 2.5rem !important;
 @mixin btn-lg {
     outline: none;
     border: none;
-    border-radius: 3%;
+    border-radius: 5%;
     cursor: pointer;
     // margin: 0rem 1rem;
 }
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .active{
     color: map-get($colors, clr_red) !important;
-    }
+}
 
 .icon{
     font-size: map-get($font-sizes, fs-small);
