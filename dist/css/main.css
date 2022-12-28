@@ -313,7 +313,7 @@ body {
   padding: 1rem 1.5rem;
 }
 
-/*===================== Why Choose Us ===================== */
+/*===================== Home Delivery ===================== */
 .homedelivery {
   gap: 6rem;
   padding: 1rem;
@@ -565,6 +565,7 @@ body {
     flex-direction: column;
     padding: 1rem;
     gap: 6rem;
+    margin-bottom: 3rem;
   }
   .whychooseus .whychooseus-1 {
     width: 100%;
@@ -598,6 +599,51 @@ body {
     background-color: #F55253;
     color: #ffffff;
     padding: 1rem 1.5rem;
+  }
+  /*===================== Home Delivery ===================== */
+  .homedelivery {
+    gap: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .homedelivery .homedelivery-1 {
+    width: 100%;
+  }
+  .homedelivery .homedelivery-1 .subtitle {
+    font-size: 1em;
+    color: #F9BA45;
+    margin-bottom: 0.7rem;
+  }
+  .homedelivery .homedelivery-1 .title {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+  .homedelivery .homedelivery-1 .content {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  .homedelivery .homedelivery-1 .btn-homedelivery {
+    background-color: transparent;
+    border: 2px solid #F55253;
+    color: #F55253;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border-radius: 3%;
+    transition: 0.5s;
+  }
+  .homedelivery .homedelivery-1 .btn-homedelivery:hover {
+    background-color: #F55253;
+    color: #ffffff;
+  }
+  .homedelivery .homedelivery-2 {
+    width: 100%;
+  }
+  .homedelivery .homedelivery-2 img {
+    width: 20rem;
   }
 }
 @media screen and (max-width: 576px) {

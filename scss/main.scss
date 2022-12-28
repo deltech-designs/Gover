@@ -333,7 +333,7 @@ body{
     }
 }
 
-/*===================== Why Choose Us ===================== */
+/*===================== Home Delivery ===================== */
 .homedelivery{
     gap: 6rem;
     padding: 1rem;
@@ -387,6 +387,7 @@ body{
     } 
 }
 
+// .download-app{}
 
 /*=============== MOBILE RESPONSIVE  ===============*/
 
@@ -642,6 +643,7 @@ body{
         flex-direction: column;
         padding: 1rem;
         gap: 6rem;
+        margin-bottom: 3rem;
 
         .whychooseus-1{
             width: 100%;
@@ -680,6 +682,62 @@ body{
             
             }
         }
+    }
+
+     /*===================== Home Delivery ===================== */
+    .homedelivery{
+        gap: 1rem;
+        padding: 1rem;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    
+        .homedelivery-1{
+            width: 100%;
+    
+            .subtitle{
+                font-size: map-get($font-sizes, fs-small);
+                color: map-get($colors, clr_yellow); 
+                margin-bottom: 0.7rem;
+            }
+    
+            .title{
+                font-size: map-get($font-sizes, fs-xlarge);
+                font-weight: map-get($font-weights, fw-bold);
+                line-height: 1.4;
+                margin-bottom: 1.5rem;
+            }
+    
+            .content{
+                font-size: map-get($font-sizes, fs-medium);
+                line-height: 1.5;
+                margin-bottom: 2rem;
+            }
+    
+            .btn-homedelivery{
+                background-color: transparent;
+                border: 2px solid map-get($colors, clr_red);
+                color: map-get($colors, clr_red);
+                font-weight: map-get($font-weights, fw-medium);
+                padding: 1rem 1.5rem;
+                border-radius: 3%;
+                transition: 0.5s;
+    
+                &:hover{
+                    background-color: map-get($colors, clr_red);
+                    color: map-get($colors, clr_white);
+                                    
+                }
+            }
+        }
+    
+    
+        .homedelivery-2{
+            width: 100%;
+            img{
+                width: 20rem;
+            }
+    
+        } 
     }
 
 }
