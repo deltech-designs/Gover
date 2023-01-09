@@ -387,7 +387,73 @@ body{
     } 
 }
 
-// .download-app{}
+/*===================== Home Delivery ===================== */
+.download-app{
+    justify-content: space-around !important;
+    background-color: lighten(#F55253,  30%);
+    padding: 1rem;
+
+
+    .downloadapp-1{
+        width: 50%;
+        margin-left: 5rem;
+    }
+
+    .downloadapp-2{
+        width: 50%;
+
+       .subtitle{
+           margin-bottom: 1rem;
+           font-size: map-get($font-sizes, fs-small);
+           color: map-get($colors, clr_red);
+        }
+        
+        .title{
+           font-size: map-get($font-sizes, fs-xxlarge);
+           margin-bottom: 2rem;
+       }
+
+       .content{
+            margin-bottom: 2rem;
+            line-height: 2.0;
+       }
+
+        .downloadapp-btn{
+            display: flex;
+            gap: 2rem;
+
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        border: 1px solid map-get($colors, clr_black);
+                        border-radius: 3px;
+                        color: map-get($colors, clr_black);
+                        padding: 0.5rem 1rem;
+                        cursor: pointer;
+                        transition: all 0.5s;
+
+
+                        &:hover{
+                            background-color: map-get($colors, clr_black);
+                            color: map-get($colors, clr_white);
+                        }
+
+                        span{
+                            margin-left: 0.5rem;
+                        }
+                }
+                
+        }
+    }
+
+}
+
+.footer{
+    padding: 1rem;
+}
+
 
 /*=============== MOBILE RESPONSIVE  ===============*/
 
@@ -740,6 +806,75 @@ body{
         } 
     }
 
+
+    /*===================== Download App  ===================== */
+.download-app{
+    flex-direction: column;
+    justify-content: space-around !important;
+    background-color: lighten(#F55253,  30%);
+    padding: 1rem;
+
+
+    .downloadapp-1{
+        width: 100%;
+        // margin-left: 5rem;
+
+        img{
+            width: 15rem;
+
+        }
+    }
+
+    .downloadapp-2{
+        width: 100%;
+
+       .subtitle{
+           margin-bottom: 1rem;
+           font-size: map-get($font-sizes, fs-small);
+           color: map-get($colors, clr_red);
+        }
+        
+        .title{
+           font-size: map-get($font-sizes, fs-xxlarge);
+           margin-bottom: 2rem;
+       }
+
+       .content{
+            margin-bottom: 2rem;
+            line-height: 2.0;
+       }
+
+        .downloadapp-btn{
+            display: flex;
+            gap: 2rem;
+
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        border: 1px solid map-get($colors, clr_black);
+                        border-radius: 3px;
+                        color: map-get($colors, clr_black);
+                        padding: 0.5rem 0.5rem;
+                        cursor: pointer;
+                        transition: all 0.5s;
+
+
+                        &:hover{
+                            background-color: map-get($colors, clr_black);
+                            color: map-get($colors, clr_white);
+                        }
+
+                        span{
+                            margin-left: 0.5rem;
+                        }
+                }
+                
+        }
+    }
+
+}
 }
 
 @media screen and (max-width: 576px) {

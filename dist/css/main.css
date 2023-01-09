@@ -293,7 +293,7 @@ body {
   margin-bottom: 0.7rem;
 }
 .whychooseus .whychooseus-2 .whychooseus-2-title {
-  font-size: 2.8em;
+  font-size: 3em;
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 1.5rem;
@@ -327,7 +327,7 @@ body {
   margin-bottom: 0.7rem;
 }
 .homedelivery .homedelivery-1 .title {
-  font-size: 2.8em;
+  font-size: 3em;
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 1.5rem;
@@ -355,6 +355,59 @@ body {
 }
 .homedelivery .homedelivery-2 img {
   width: 30rem;
+}
+
+/*===================== Home Delivery ===================== */
+.download-app {
+  justify-content: space-around !important;
+  background-color: #fde3e3;
+  padding: 1rem;
+}
+.download-app .downloadapp-1 {
+  width: 50%;
+  margin-left: 5rem;
+}
+.download-app .downloadapp-2 {
+  width: 50%;
+}
+.download-app .downloadapp-2 .subtitle {
+  margin-bottom: 1rem;
+  font-size: 1em;
+  color: #F55253;
+}
+.download-app .downloadapp-2 .title {
+  font-size: 3em;
+  margin-bottom: 2rem;
+}
+.download-app .downloadapp-2 .content {
+  margin-bottom: 2rem;
+  line-height: 2;
+}
+.download-app .downloadapp-2 .downloadapp-btn {
+  display: flex;
+  gap: 2rem;
+}
+.download-app .downloadapp-2 .downloadapp-btn a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #2E2E2E;
+  border-radius: 3px;
+  color: #2E2E2E;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.download-app .downloadapp-2 .downloadapp-btn a:hover {
+  background-color: #2E2E2E;
+  color: #ffffff;
+}
+.download-app .downloadapp-2 .downloadapp-btn a span {
+  margin-left: 0.5rem;
+}
+
+.footer {
+  padding: 1rem;
 }
 
 /*=============== MOBILE RESPONSIVE  ===============*/
@@ -448,7 +501,7 @@ body {
     width: 40px;
   }
   .landing-page .landing-col-1 .heading-title {
-    font-size: 2.8em;
+    font-size: 3em;
     color: #2E2E2E;
     margin-bottom: 0.7rem;
   }
@@ -644,6 +697,57 @@ body {
   }
   .homedelivery .homedelivery-2 img {
     width: 20rem;
+  }
+  /*===================== Download App  ===================== */
+  .download-app {
+    flex-direction: column;
+    justify-content: space-around !important;
+    background-color: #fde3e3;
+    padding: 1rem;
+  }
+  .download-app .downloadapp-1 {
+    width: 100%;
+  }
+  .download-app .downloadapp-1 img {
+    width: 15rem;
+  }
+  .download-app .downloadapp-2 {
+    width: 100%;
+  }
+  .download-app .downloadapp-2 .subtitle {
+    margin-bottom: 1rem;
+    font-size: 1em;
+    color: #F55253;
+  }
+  .download-app .downloadapp-2 .title {
+    font-size: 3em;
+    margin-bottom: 2rem;
+  }
+  .download-app .downloadapp-2 .content {
+    margin-bottom: 2rem;
+    line-height: 2;
+  }
+  .download-app .downloadapp-2 .downloadapp-btn {
+    display: flex;
+    gap: 2rem;
+  }
+  .download-app .downloadapp-2 .downloadapp-btn a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #2E2E2E;
+    border-radius: 3px;
+    color: #2E2E2E;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .download-app .downloadapp-2 .downloadapp-btn a:hover {
+    background-color: #2E2E2E;
+    color: #ffffff;
+  }
+  .download-app .downloadapp-2 .downloadapp-btn a span {
+    margin-left: 0.5rem;
   }
 }
 @media screen and (max-width: 576px) {
