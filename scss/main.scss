@@ -817,16 +817,16 @@ body{
 
     .downloadapp-1{
         width: 100%;
-        // margin-left: 5rem;
+        margin-left: 2rem;
 
         img{
             width: 15rem;
-
         }
     }
 
     .downloadapp-2{
         width: 100%;
+        margin-top: 3rem;
 
        .subtitle{
            margin-bottom: 1rem;
@@ -835,7 +835,7 @@ body{
         }
         
         .title{
-           font-size: map-get($font-sizes, fs-xxlarge);
+           font-size: map-get($font-sizes, fs-xlarge    );
            margin-bottom: 2rem;
        }
 
@@ -846,30 +846,33 @@ body{
 
         .downloadapp-btn{
             display: flex;
-            gap: 2rem;
+            gap: 1rem;
 
 
-                    a{
-                        display: flex;
-                        align-items: center;
-                        text-decoration: none;
-                        border: 1px solid map-get($colors, clr_black);
-                        border-radius: 3px;
-                        color: map-get($colors, clr_black);
-                        padding: 0.5rem 0.5rem;
-                        cursor: pointer;
-                        transition: all 0.5s;
+            a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                border: 1px solid map-get($colors, clr_black);
+                border-radius: 3px;
+                color: map-get($colors, clr_black);
+                padding: 0.5rem 0.5rem;
+                cursor: pointer;
+                transition: all 0.5s;
 
 
-                        &:hover{
-                            background-color: map-get($colors, clr_black);
-                            color: map-get($colors, clr_white);
-                        }
+                    &:hover{
+                        background-color: map-get($colors, clr_black);
+                        color: map-get($colors, clr_white);
+                    }
 
-                        span{
-                            margin-left: 0.5rem;
-                        }
-                }
+                    img{
+                        width: 30px;
+                    }
+                    span{
+                        margin-left: 0.5rem;
+                    }
+            }
                 
         }
     }

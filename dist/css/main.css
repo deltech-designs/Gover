@@ -707,12 +707,14 @@ body {
   }
   .download-app .downloadapp-1 {
     width: 100%;
+    margin-left: 2rem;
   }
   .download-app .downloadapp-1 img {
     width: 15rem;
   }
   .download-app .downloadapp-2 {
     width: 100%;
+    margin-top: 3rem;
   }
   .download-app .downloadapp-2 .subtitle {
     margin-bottom: 1rem;
@@ -720,7 +722,7 @@ body {
     color: #F55253;
   }
   .download-app .downloadapp-2 .title {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 2rem;
   }
   .download-app .downloadapp-2 .content {
@@ -729,7 +731,7 @@ body {
   }
   .download-app .downloadapp-2 .downloadapp-btn {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   .download-app .downloadapp-2 .downloadapp-btn a {
     display: flex;
@@ -745,6 +747,9 @@ body {
   .download-app .downloadapp-2 .downloadapp-btn a:hover {
     background-color: #2E2E2E;
     color: #ffffff;
+  }
+  .download-app .downloadapp-2 .downloadapp-btn a img {
+    width: 30px;
   }
   .download-app .downloadapp-2 .downloadapp-btn a span {
     margin-left: 0.5rem;
