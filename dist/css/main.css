@@ -406,8 +406,66 @@ body {
   margin-left: 0.5rem;
 }
 
+/*===================== Footer ===================== */
 .footer {
-  padding: 1rem;
+  padding: 4rem;
+  gap: 10rem;
+}
+.footer .footer-1 p {
+  margin-top: 1rem;
+  font-size: 15px;
+}
+.footer .footer-2 {
+  width: 50%;
+}
+.footer .footer-2 h5 {
+  margin-top: 1rem;
+}
+.footer .footer-2 ul {
+  list-style: none;
+  margin-top: 3rem;
+}
+.footer .footer-2 ul li {
+  margin-bottom: 0.7rem;
+}
+.footer .footer-2 ul li a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer .footer-3 {
+  width: 50%;
+}
+.footer .footer-3 h5 {
+  margin-top: 1rem;
+}
+.footer .footer-3 ul {
+  list-style: none;
+  margin-top: 3rem;
+}
+.footer .footer-3 ul li {
+  margin-bottom: 0.7rem;
+}
+.footer .footer-3 ul li a {
+  text-decoration: none;
+  font-size: 15px;
+}
+.footer .footer-4 h5 {
+  margin-top: 1rem;
+}
+.footer .footer-4 p {
+  margin-top: 2.5rem;
+  font-size: 15px;
+}
+.footer .allright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1em;
+}
+.footer .allright div a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #2E2E2E;
 }
 
 /*=============== MOBILE RESPONSIVE  ===============*/
@@ -753,6 +811,59 @@ body {
   }
   .download-app .downloadapp-2 .downloadapp-btn a span {
     margin-left: 0.5rem;
+  }
+  /*===================== Footer ===================== */
+  .footer {
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .footer .footer-1 p {
+    margin-top: 0.5rem;
+    font-size: 15px;
+  }
+  .footer .footer-2 {
+    width: 70%;
+  }
+  .footer .footer-2 ul {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  .footer .footer-2 ul li {
+    margin-bottom: 1rem;
+  }
+  .footer .footer-2 ul li a {
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .footer .footer-3 {
+    width: 70%;
+  }
+  .footer .footer-3 ul {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  .footer .footer-3 ul li {
+    margin-bottom: 0.7rem;
+  }
+  .footer .footer-3 ul li a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .footer .footer-4 p {
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+  .footer .allright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 1em;
+  }
+  .footer .allright div a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #2E2E2E;
   }
 }
 @media screen and (max-width: 576px) {

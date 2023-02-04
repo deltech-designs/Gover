@@ -450,9 +450,86 @@ body{
 
 }
 
+/*===================== Footer ===================== */
+
 .footer{
-    padding: 1rem;
-}
+
+    padding: 4rem;
+    gap: 10rem;
+    
+    .footer-1{
+        p{
+        margin-top: 1rem;
+        font-size: 15px;
+       }
+    }
+
+    .footer-2{
+        h5{
+            margin-top: 1rem;
+        }
+        width: 50%;
+        ul{
+            list-style: none;
+            margin-top: 3rem;
+
+            li{
+                margin-bottom: 0.7rem;
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .footer-3{
+        width: 50%;
+        h5{
+            margin-top: 1rem;
+        }
+        ul{
+            list-style: none;
+            margin-top: 3rem;
+
+            li{
+                margin-bottom: 0.7rem;
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .footer-4{
+        h5{
+            margin-top: 1rem;
+        }   
+        p{
+        margin-top: 2.5rem;
+        font-size: 15px;
+       }
+    }
+    
+
+    .allright{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        font-size: map-get($font-sizes, fs-small);
+        
+        div a{
+    
+            margin-left: 1rem;
+            text-decoration: none;
+            color: map-get($colors, clr_black);
+        }
+    }
+}  
+
+
+
 
 
 /*=============== MOBILE RESPONSIVE  ===============*/
@@ -808,76 +885,146 @@ body{
 
 
     /*===================== Download App  ===================== */
-.download-app{
-    flex-direction: column;
-    justify-content: space-around !important;
-    background-color: lighten(#F55253,  30%);
-    padding: 1rem;
+    .download-app{
+        flex-direction: column;
+        justify-content: space-around !important;
+        background-color: lighten(#F55253,  30%);
+        padding: 1rem;
 
 
-    .downloadapp-1{
-        width: 100%;
-        margin-left: 2rem;
+        .downloadapp-1{
+            width: 100%;
+            margin-left: 2rem;
 
-        img{
-            width: 15rem;
+            img{
+                width: 15rem;
+            }
         }
+
+        .downloadapp-2{
+            width: 100%;
+            margin-top: 3rem;
+
+        .subtitle{
+            margin-bottom: 1rem;
+            font-size: map-get($font-sizes, fs-small);
+            color: map-get($colors, clr_red);
+            }
+            
+            .title{
+            font-size: map-get($font-sizes, fs-xlarge    );
+            margin-bottom: 2rem;
+        }
+
+        .content{
+                margin-bottom: 2rem;
+                line-height: 2.0;
+        }
+
+            .downloadapp-btn{
+                display: flex;
+                gap: 1rem;
+
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    border: 1px solid map-get($colors, clr_black);
+                    border-radius: 3px;
+                    color: map-get($colors, clr_black);
+                    padding: 0.5rem 0.5rem;
+                    cursor: pointer;
+                    transition: all 0.5s;
+
+
+                        &:hover{
+                            background-color: map-get($colors, clr_black);
+                            color: map-get($colors, clr_white);
+                        }
+
+                        img{
+                            width: 30px;
+                        }
+                        span{
+                            margin-left: 0.5rem;
+                        }
+                }
+                    
+            }
+        }
+
     }
 
-    .downloadapp-2{
-        width: 100%;
-        margin-top: 3rem;
+    /*===================== Footer ===================== */
 
-       .subtitle{
-           margin-bottom: 1rem;
-           font-size: map-get($font-sizes, fs-small);
-           color: map-get($colors, clr_red);
+    .footer{
+
+        padding: 2rem;
+        gap: 1rem;
+        
+        .footer-1{
+            p{
+            margin-top: 0.5rem;
+            font-size: 15px;
+        }
+        }
+
+        .footer-2{
+            width: 70%;
+            ul{
+                list-style: none;
+                margin-top: 1rem;
+
+                li{
+                    margin-bottom: 1rem;
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .footer-3{
+            width: 70%;
+            ul{
+                list-style: none;
+                margin-top: 1rem;
+
+                li{
+                    margin-bottom: 0.7rem;
+                    a{
+                        text-decoration: none;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .footer-4{
+            p{
+            margin-top: 1rem;
+            font-size: 15px;
+        }
         }
         
-        .title{
-           font-size: map-get($font-sizes, fs-xlarge    );
-           margin-bottom: 2rem;
-       }
-
-       .content{
-            margin-bottom: 2rem;
-            line-height: 2.0;
-       }
-
-        .downloadapp-btn{
+        .allright{
             display: flex;
-            gap: 1rem;
-
-
-            a{
-                display: flex;
-                align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 1rem;
+            font-size: map-get($font-sizes, fs-small);
+            
+            div a{
+        
+                margin-left: 1rem;
                 text-decoration: none;
-                border: 1px solid map-get($colors, clr_black);
-                border-radius: 3px;
                 color: map-get($colors, clr_black);
-                padding: 0.5rem 0.5rem;
-                cursor: pointer;
-                transition: all 0.5s;
-
-
-                    &:hover{
-                        background-color: map-get($colors, clr_black);
-                        color: map-get($colors, clr_white);
-                    }
-
-                    img{
-                        width: 30px;
-                    }
-                    span{
-                        margin-left: 0.5rem;
-                    }
             }
-                
-        }
-    }
+        }        
+    } 
 
-}
 }
 
 @media screen and (max-width: 576px) {
